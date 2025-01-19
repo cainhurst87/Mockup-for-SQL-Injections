@@ -1,0 +1,94 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik';
+    color: #c2c2c2;
+}
+
+html, body{
+    min-width: 100vw;
+    min-height: 100%;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+#container-all{
+    background-color: #000;
+    height: 100vh;
+    width: 100vw;
+}
+
+#container-image{
+    background-image: url(images/pj.web.login.login_webapp.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+#container-login{
+    background-color: #000;
+}
+
+#login{
+    height: 70%;
+    margin: 2.5% 0;
+    padding: 0 20%;
+}
+
+#login-footer{    
+    flex-grow: 1;
+    background-color: #222;
+}
+
+#login-footer button, #button-forgot{
+    color: #553C9A;
+    background: none;
+    border: none;
+    font-weight: bolder;
+}
+
+#login-footer button:hover, #button-forgot:hover{
+    color: #8161d8;
+}
+
+#login h1{
+    font-size: 2em;
+}
+
+.login-input-field{
+    width: 100%;
+    padding: 0.5em 0;
+}
+
+.login-input-field h3{
+    font-size: 1em;
+}
+
+.login-input-field input{
+    width: 100%;
+    background: none;
+    border: none;
+    outline:none;
+    padding: 0.3em 0;
+    border-bottom: 2px solid #222;
+    font-size: 1.2em;
+}
+
+#button-access{
+    width: 100%;
+    background-color: #222;
+    color: #c2c2c2;
+    border-radius: 3em;
+    border: none;
+    transition: 0.1s;
+}
+
+#button-access:hover{
+    background-color: #391c88;
+}
+
+#button-access:active{
+    background-color: #222;
+}

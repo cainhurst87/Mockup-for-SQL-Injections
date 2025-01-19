@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nubank - Finanças</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+    
+    <div id="container-all" class="container-fluid g-0 d-flex flex-row">
+
+        <div id="container-image" class="col-6 d-none d-lg-block">
+
+        </div>
+
+        <div id="container-login" class="col-lg-6 col-12 g-0 d-flex flex-column justify-content-start align-items-center">
+
+            <div id="login" class="w-100 my-3 d-flex flex-column justify-content-center align-items-start">
+
+                <h1 class="py-2 text-nowrap">Acesse o Nubank PJ</h1>
+
+                <div id="login-input-username" class="login-input-field">
+                    <h3>Nome</h3>
+                    <input type="text" name="username" id="login-username">
+                </div>
+
+
+                <div id="login-input-password" class="login-input-field">
+                    <h3>Senha</h3>
+                    <input type="text" name="password" id="login-password">
+                    <p class="pt-2">Use a senha de acesso ao app, com 8 letras e/ou números</p>
+                </div>
+
+                <button id="button-forgot" class="pt-2 pb-4 ps-3">Esqueci a senha</button>
+
+                <button id="button-access" class="p-3">Acessar <i class="bi bi-arrow-right"></i></button>
+
+            </div>
+
+            <div id="login-footer" class="container-fluid w-100 h-25  d-flex flex-row justify-content-center gap-5">
+                
+                <button class="ml-lg-5 m-sm-1 m-0">Não sou cliente</button>
+                <button class="m-lg-5 m-sm-1 m-0"> Me roubaram</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
