@@ -32,9 +32,9 @@
 
         <div id="container-login" class="col-lg-6 col-12 g-0 d-flex flex-column justify-content-start align-items-center">
 
-            <div id="login" class="w-100 my-3 d-flex flex-column justify-content-center align-items-start">
-
-                <h1 class="py-2 text-nowrap">Acesse o Nubank PJ</h1>
+            <form id="login" action="login.php" method="POST" class="w-100 my-3 d-flex flex-column justify-content-center align-items-start">
+                
+                <h1 class="py-2 text-nowrap align-self-center align-self-lg-start">Acesse o Nubank PJ</h1>
 
                 <div id="login-input-username" class="login-input-field">
                     <h3>Nome</h3>
@@ -50,9 +50,9 @@
 
                 <button id="button-forgot" class="pt-2 pb-4 ps-3">Esqueci a senha</button>
 
-                <button id="button-access" class="p-3">Acessar <i class="bi bi-arrow-right"></i></button>
-
-            </div>
+                <button type="submit" id="button-access" class="p-3">Acessar <i class="bi bi-arrow-right"></i></button>
+            
+            </form>
 
             <div id="login-footer" class="container-fluid w-100 h-25  d-flex flex-row justify-content-center gap-5">
                 
