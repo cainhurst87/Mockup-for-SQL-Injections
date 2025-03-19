@@ -1,252 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Luiz Leal - Projetos e Códigos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nubank - Finanças</title>
 
-    <!-- Latest compiled and minified CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="introduction.css">
-    <link rel="stylesheet" href="projects.css">
-    <link rel="stylesheet" href="footer.css">
 
 </head>
 
+
 <body>
+    
+    <div id="container-all" class="container-fluid g-0 d-flex flex-row">
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top">
-        
-        <div class="container-fluid">
-
-            <span id="logo" class="navbar-brand fs-1 ms-3">Luiz Leal</span>
-
-                <div class="d-flex ms-auto align-items-center">
-
-                <!-- Nav -->
-                <ul id="jump-nav-list" class="navbar-nav me-2 ms-auto d-none d-md-flex">
-                    <li class="nav-item">
-                        <a class="btn-link me-3" href="#introduction">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn-link me-3" href="#projects">Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn-link me-3" href="#footer">Contato</a>
-                    </li>
-                </ul>
-
-
-                <!-- Toggle Light -->
-                <button class="me-0" id="toggle-light-btn">
-                    <i class="bi bi-moon"></i>
-                </button>
-
-                <!-- Language Dropdown -->
-                <div class="dropdown ms-2 me-2">
-
-                    <!-- Language Dropdown Btn -->
-                    <button class="btn btn-link dropdown-toggle me-3" type="button" id="language-dropdown-btn" data-bs-toggle="dropdown" aria-expanded="false">
-                        🇧🇷 BR
-                    </button>
-
-                    <!-- Language Dropdown Items -->
-                    <ul id="language-dropdown-list" class="dropdown-menu dropdown-menu-end" aria-labelledby="language-dropdown-btn">
-                        <li><a class="dropdown-item" href="index-en.html">🇺🇸 EN</a></li>
-                        <li><a class="dropdown-item" href="index-es.html">🇪🇸 ES</a></li>
-                    </ul>
-
-                </div>
-
-            </div>
+        <div id="container-image" class="col-6 d-none d-lg-block">
 
         </div>
 
-    </nav>
+        <div id="container-login" class="col-lg-6 col-12 g-0 d-flex flex-column justify-content-start align-items-center">
 
-    <!-- Introduction -->
-    <div id="introduction" class="container-fluid">
+            <form id="login" action="login.php" method="POST" class="w-100 my-3 d-flex flex-column justify-content-center align-items-start">
+                
+                <h1 class="py-2 text-nowrap align-self-center align-self-lg-start">Acesse o Nubank PJ</h1>
 
-        <div id="introduction-inner" class="row d-flex justify-content-center align-items-start pt-5 mx-5">
-
-            <!-- Introduction Text Box -->
-            <div class="col-10 col-md-5 order-2 order-md-1 mb-4 text-center text-md-start">
-                <div id="flexbox-introduction" class="d-flex flex-column gap-0">
-                    <h1 class="h1">Olá, eu sou o Luiz</h1>
-                    <p class="fs-4 lh-1">Sou estudante de engenharia de computação e estou estudando desenvolvimento front-end, troubleshooting de redes, cybersegurança e linguagens de programação como C e Python.</p>
-                    <span class="fs-5"><i class="bi bi-geo-alt-fill"></i> Petrópolis, Rio de Janeiro, Brasil</span>
-                    <span class="fs-5"><i class="bi bi-check2-circle"></i> Disponível para novos projetos</span>
-                    <span class="fs-5"><i class="bi bi-check2-circle"></i> Buscando oportunidades de estágio</span>
-                    <span id="flexbox-introduction-btn-board" class="d-flex align-items-center justify-content-sm-start justify-content-center gap-2 my-3 mb-4">
-                        <a id="download-cv-btn" href="documents/Resume - Luiz Felipe Leal.pdf" download class="text-nowrap p-3 fs-4">Baixar CV</a>
-                        <a href="https://github.com/cainhurst87" class="fs-1 mx-2"><i class="bi-github"></i></a>
-                        <a href="https://www.linkedin.com/in/luiz-leal-7735ab1b5/" class="fs-1 mx-2"><i class="bi bi-linkedin"></i></a>
-                    </span>
+                <div id="login-input-username" class="login-input-field">
+                    <h3>Nome</h3>
+                    <input type="text" name="username" id="login-username">
                 </div>
-            </div>
 
-            <!-- Portrait -->
-            <div id="portrait-container" class="d-flex align-items-center justify-content-center col-10 col-md-5 order-1 order-md-2 mb-4">
-                <img id="portrait-image" class="img-fluid rounded-circle" src="images/portrait.jpeg" alt="" srcset="">
-            </div>
 
-        </div>
-
-    </div>
-
-    <!-- Projects -->
-    <div id="projects" class="container-fluid py-4">
-        
-        <!-- Title -->
-        <h1 id="projects-title" class="text-center text-md-start ms-md-5">Projetos</h1>
-        
-        <!-- Cards Container -->
-        <div class="row justify-content-center g-4 mt-4 mx-2">
-
-            <!-- Card 1 -->
-            <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-                <div class="card h-100 shadow-sm project-card">
-                    <img src="images/password-preview.png" class="card-img-top" alt="Password Preview">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Simple Password Generator</h5>
-                        <p class="card-text">Um gerador simples de senhas fortes.</p>
-                        <div class="project-icons mt-auto d-flex flex-wrap justify-content-start gap-2">
-                            <a class="project-icon-demo fs-6" href="https://cainhurst87.github.io/Simple-Password-Generation/"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
-                            <a class="project-icon-git fs-6" href="https://github.com/cainhurst87/Simple-Password-Generation"><i class="bi bi-github"></i> View Code</a>
-                        </div>
-                    </div>
+                <div id="login-input-password" class="login-input-field">
+                    <h3>Senha</h3>
+                    <input type="text" name="password" id="login-password">
+                    <p class="pt-2">Use a senha de acesso ao app, com 8 letras e/ou números</p>
                 </div>
-            </div>
 
-            <!-- Card 2 -->
-            <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-                <div class="card h-100 shadow-sm project-card">
-                    <img src="images/rgba-preview.png" class="card-img-top" alt="RGBA Preview">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">RGBA Color Picker</h5>
-                        <p class="card-text">Ferramenta para selecionar cores em formato RGBA.</p>
-                        <div class="project-icons mt-auto d-flex flex-wrap justify-content-start gap-2">
-                            <a class="project-icon-demo fs-6" href="https://cainhurst87.github.io/RGBA-Color-Picker/"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
-                            <a class="project-icon-git fs-6" href="https://github.com/cainhurst87/RGBA-Color-Picker"><i class="bi bi-github"></i> View Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <button id="button-forgot" class="pt-2 pb-4 ps-3">Esqueci a senha</button>
 
-            <!-- Card 3 -->
-            <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-                <div class="card h-100 shadow-sm project-card">
-                    <img src="images/bouncy-preview.gif" class="card-img-top" alt="Bouncy Screensaver Preview">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Bouncy Screensaver</h5>
-                        <p class="card-text">Uma simulação dos antigos protetores de tela de DVD players.</p>
-                        <div class="project-icons mt-auto d-flex flex-wrap justify-content-start gap-2">
-                            <a class="project-icon-demo fs-6" href="https://cainhurst87.github.io/Bouncy-Screensaver/"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
-                            <a class="project-icon-git fs-6" href="https://github.com/cainhurst87/Bouncy-Screensaver"><i class="bi bi-github"></i> View Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-                <div class="card h-100 shadow-sm project-card">
-                    <img src="images/breakout-preview.png" class="card-img-top" alt="Breakout Preview">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Breakout/Arkanoid (Assembly x86)</h5>
-                        <p class="card-text">Versão do clássico jogo Arkanoid implementado em Assembly.</p>
-                        <div class="project-icons mt-auto d-flex flex-wrap justify-content-start gap-2">
-                            <a class="project-icon-git fs-6" href="https://github.com/cainhurst87/Arquitetura_breakout"><i class="bi bi-github"></i> View Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-                <div class="card h-100 shadow-sm project-card">
-                    <img src="images/pomodoro-preview.png" class="card-img-top" alt="Breakout Preview">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Pomodoro Timer</h5>
-                        <p class="card-text">Cronômetro customizável baseado no método Pomodoro.</p>
-                        <div class="project-icons mt-auto d-flex flex-wrap justify-content-start gap-2">
-                            <a class="project-icon-demo fs-6" href="https://cainhurst87.github.io/Pomodoro-Timer/"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
-                            <a class="project-icon-git fs-6" href="https://github.com/cainhurst87/Pomodoro-Timer"><i class="bi bi-github"></i> View Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-                <div class="card h-100 shadow-sm project-card">
-                    <img src="images/mockup.png" class="card-img-top" alt="Mockup Preview">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">SQL Injection Page</h5>
-                        <p class="card-text">Reprodução de página de acesso de um banco digital para teste de ataques SQL Injection.</p>
-                        <div class="project-icons mt-auto d-flex flex-wrap justify-content-start gap-2">
-                            <a class="project-icon-git fs-6" href="https://github.com/cainhurst87/Mockup-for-SQL-Injections"><i class="bi bi-github"></i> View Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer id="footer" class="py-4">
-
-        <div class="container-fluid">
+                <button type="submit" id="button-access" class="p-3">Acessar <i class="bi bi-arrow-right"></i></button>
             
-            <div class="d-flex flex-column align-items-center">
+            </form>
 
-                <!-- Footer call -->
-                <div id="footer-call" class="d-flex justify-content-center w-100 mb-3">
-                    <span class="fs-1 p-3">Entre em contato</span>
-                </div>
-
-                <div id="footer-email" class="d-flex align-items-center justify-content-center w-100 mb-2">
-                    <i class="fs-1 bi bi-envelope"></i>
-                    <span id="email-text" class="fs-5 mx-2">lealrodriguesjob@gmail.com</span>
-                    <button id="copy-email-btn"><i class="fs-1 bi bi-copy"></i></button>
-                </div>
-
-                <div id="footer-icons" class="d-flex justify-content-center gap-3 w-100 mb-2">
-                    <a href="#" class="fs-1 mx-2"><i class="bi-github"></i></a>
-                    <a href="#" class="fs-1 mx-2"><i class="bi bi-linkedin"></i></a>
-                </div>
-
-                <div class="d-flex text-center justify-content-center w-100 mb-2">
-                    <span class="fs-6">2024 | Projetado e <a href="https://github.com/cainhurst87/Portfolio-Bootstrap-5">programado</a> por Luiz Leal</span>
-                </div>
+            <div id="login-footer" class="container-fluid w-100 h-25  d-flex flex-row justify-content-center gap-5">
+                
+                <button class="ml-lg-5 m-sm-1 m-0">Não sou cliente</button>
+                <button class="m-lg-5 m-sm-1 m-0"> Me roubaram</button>
 
             </div>
 
         </div>
 
-    </footer>
-    
-    <!-- Bootstrap Bundle com Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
 
-    <script src="script.js"></script>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
